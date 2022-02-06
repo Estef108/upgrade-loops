@@ -11,19 +11,20 @@
      {id: 59, name: 'Madagascar'}
     ]
 
+
     let nuevoArray = [];
-    for (let place of placesToTravel){
-        if(place.id !== 11 && place.id !== 40){
-            nuevoArray.push(place);
+    for ( let i = 0; i < placesToTravel.length; i++ ){
+        if (placesToTravel[i].id !== 11 && placesToTravel[i].id !== 40){
+            nuevoArray.push(placesToTravel[i]);
         }
     }
     console.log(nuevoArray);
 
-////////////////
-    let nuevoArray2 = [];
-    for ( let i = 0; i < placesToTravel.length; i++ ){
-        if (placesToTravel[i].id !== 11 && placesToTravel[i].id !== 40){
-            nuevoArray2.push(placesToTravel[i]);
-        }
-    }
-    console.log(nuevoArray2);
+    //////////////
+    // let nuevoArray2 = [];
+    // for (let place of placesToTravel){
+    //     if(place.id !== 11 && place.id !== 40){
+    //         nuevoArray2.push(place);
+    //     }
+    // }
+    // console.log(nuevoArray2);

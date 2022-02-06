@@ -15,20 +15,22 @@ const alumns = [
 ]
 
 
-alumns.forEach((alumno) => {
-    if(alumno.T1 === true && (alumno.T2 === true || alumno.T3 === true)){
-        alumno.isApproved = true;
-    }else if ((alumno.T1 === true || alumno.T2 === true) && alumno.T3 === true){
-        alumno.isApproved = true;
-    }else{
-        alumno.isApproved = false;
-    }
+// for (let i= 0; i < alumns.length; i++){
+//     let alumno = alumns[i];
+//     if(alumno.T1 === true && (alumno.T2 === true || alumno.T3 === true)){
+//         alumno.isApproved = true;
+//         console.log(`${alumno.name} is approved`);
+//     }else if ((alumno.T1 === true || alumno.T2 === true) && alumno.T3 === true){
+//         alumno.isApproved = true;
+//         console.log(`${alumno.name} is approved`);
+//     }else{
+//         alumno.isApproved = false;
+//     }
+// }
 
-})
 
-console.log(alumns);
 
-/************************/
+// /************************/
 alumns.forEach((alumno) => {
     if(alumno.T1 === true && (alumno.T2 === true || alumno.T3 === true)){
         console.log(`${alumno.name} is approved`);

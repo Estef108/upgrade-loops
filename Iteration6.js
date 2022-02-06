@@ -11,11 +11,10 @@ const toys = [
 ]
 
 
-let newToys = [];
 for (let toy of toys) {
-    if (!(toy.name).includes("gato")) {
-        newToys.push(toy);
+    if ((toy.name).includes("gato")) {
+        toys.splice(toys.indexOf(toy));
     }
 }
 
-console.log(newToys);
+console.log(toys);

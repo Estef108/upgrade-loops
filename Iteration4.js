@@ -9,5 +9,5 @@ const alien = {
 }
 
 for ( let propiedad in alien){
-    console.log(`${alien[propiedad]}`);
+    console.log(`${propiedad}: ${alien[propiedad]}`);
 }
